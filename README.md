@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD030 -->
 
-# Flowise Embed
+# ChatGee Studio Embed
 
-Javascript library to display flowise chatbot on your website
+Javascript library to display chatgee Studio chatbot on your website
 
 ![Flowise](https://github.com/FlowiseAI/FlowiseChatEmbed/blob/main/images/ChatEmbed.gif?raw=true)
 
@@ -24,13 +24,19 @@ Build:
 yarn build
 ```
 
+Publish:
+
+```bash
+npm publish
+```
+
 ## Embed in your HTML
 
 ### PopUp
 
 ```html
 <script type="module">
-  import Chatbot from 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
+  import Chatbot from 'https://cdn.jsdelivr.net/npm/chatgee-studio-embed/dist/web.js';
   Chatbot.init({
     chatflowid: '<chatflowid>',
     apiHost: 'http://localhost:3000',
@@ -48,7 +54,7 @@ yarn build
     apiHost: 'http://localhost:3000',
   });
 </script>
-<flowise-fullchatbot></flowise-fullchatbot>
+<chatgee-studio-fullchatbot></chatgee-studio-fullchatbot>
 ```
 
 To enable full screen, add `margin: 0` to <code>body</code> style, and confirm you don't set height and width
@@ -77,7 +83,7 @@ You can also customize chatbot with different configuration
 
 ```html
 <script type="module">
-  import Chatbot from 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
+  import Chatbot from 'https://cdn.jsdelivr.net/npm/chatgee-studio-embed/dist/web.js';
   Chatbot.init({
     chatflowid: '91e9c803-5169-4db9-8207-3c0915d71c5f',
     apiHost: 'http://localhost:3000',
@@ -110,7 +116,7 @@ You can also customize chatbot with different configuration
       },
       chatWindow: {
         showTitle: true, // show/hide the title bar
-        title: 'Flowise Bot',
+        title: 'ChatGee Bot',
         titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
         welcomeMessage: 'Hello! This is custom welcome message',
         backgroundColor: '#ffffff',
