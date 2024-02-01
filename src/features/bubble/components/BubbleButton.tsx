@@ -7,7 +7,7 @@ type Props = ButtonTheme & {
   toggleBot: () => void;
 };
 
-const defaultButtonColor = '#3B81F6';
+const defaultButtonColor = '#E252bb';
 const defaultIconColor = 'white';
 const defaultBottom = '20';
 const defaultRight = '20';
